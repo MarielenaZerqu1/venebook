@@ -6,6 +6,7 @@ import(
 	"strconv"
 
 	"github.com/gominima/minima"
+	"github.com/hexacry/venebook/routes"
 )
 
 var(
@@ -28,5 +29,6 @@ func init() {
 }
 
 func main() {
+	App.UseGroup(routes.V1A())
 	App.Listen(fmt.Sprintf(":%d", port))
 }
