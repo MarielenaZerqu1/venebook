@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="img/icono.png">
+   <link rel="stylesheet" href="assets/css/index.css">
+   <meta name="viewport" content="width-device-width, user-scalable-no, initial-scale-1.0, maximum-scale-1.0, minimum-scale-1.0">
+   <script src="assets/js/login.js"></script>
+   <title>Venebook - Iniciar en tu cuenta</title>
+</head>
+
+<body>
+   <!-- ====== HEADER ====== -->
+   <header class="header container">
+      <!-- ====== NAVBAR ====== -->
+      <nav class="navbar">
+         <div class="logo">
+            <h2 class="logo-name">
+               <img src="img/icono.png" width="25">
+               <a href="#">Vene<span>book</span> </a>
+            </h2>
+         </div>
+         <!-- ====== NAV_MENU ====== -->
+         <div class="nav_menu">
+            <div class="close-nav">
+               <button class="close_btn">&#10005;</button>
+            </div>
+            <ul class="nav-link-list">
+               <li class="nav-link-list-item">
+                  <a class="nav-link active" href="app.html">Iniciar Seccion</a>
+               </li>
+            </ul>
+         </div>
+
+         <button class="toggle_btn">
+            <i class="bx bx-menu"></i>
+         </button>
+      </nav>
+   </header>
+   <div class="wrapper">
+      <div class="title-text">
+         <div class="title login">
+            Inicia Sesion
+         </div>
+         <div class="title signup">
+            Registrarse
+         </div>
+      </div>
+      <div class="form-container">
+         <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Iniciar Sesion</label>
+            <label for="signup" class="slide signup">Registrate</label>
+            <div class="slider-tab"></div>
+         </div>
+         <div class="form-inner">
+            <form action="#" class="login">
+               <div class="field">
+                  <input type="text" placeholder="Email" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Contraseña" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Confirmar Contraseña" required>
+               </div>
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Iniciar">
+               </div>
+               <div class="signup-link">
+                  No eres miembro? <a href="">Registrate</a>
+                  <br>
+                  <br>
+                  o
+                  <br>
+                  <br>
+                  ¿Se te olvido tu Contraseña? <a href="restab.html">cambiar</a>
+               </div>
+            </form>
+            <form action="#" class="signup">
+               <div class="field">
+                  <input type="text" placeholder="Nombre de Usuario" required>
+               </div>
+               <div class="field">
+                  <input type="text" placeholder="Email" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Contraseña" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Confirmar Contraseña" required>
+               </div>
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Registrate"> <a href="secion.html"></a>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+
+   <script src="js/login.js"></script>
+</body>
+</html>
