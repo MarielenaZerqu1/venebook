@@ -4,6 +4,7 @@ import(
 	"os"
 	"fmt"
 	"strconv"
+	path "path/filepath"
 
 	"github.com/gominima/minima"
 	"github.com/hexacry/venebook/routes"
@@ -30,5 +31,7 @@ func init() {
 
 func main() {
 	App.UseGroup(routes.V1A())
+	App.File("/", path.Join("public", "www", "index.html"))
+
 	App.Listen(fmt.Sprintf(":%d", port))
 }
